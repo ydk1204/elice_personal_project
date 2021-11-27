@@ -10,7 +10,8 @@ const TestPage = (props) => {
   const inputRef = useRef(null);
   const viewRef = useRef(null);
 
-  const list = props.questions.map((question) => question);
+  const list =
+    props.questions !== null && props.questions.map((question) => question);
   let data = 0;
   let countPer = 0;
   const [progress, setProgress] = useState(0);
@@ -92,8 +93,6 @@ const TestPage = (props) => {
       setBtnColor(true);
     }
   });
-
-  // console.log("배포 안댐");
 
   const progressPer = () => {
     countPer = props.pp.filter((value) => value !== null);
