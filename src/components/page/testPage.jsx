@@ -6,28 +6,38 @@ import ProgressBar from "./progressBar";
 
 const TestPage = (props) => {
   const [btnColor, setBtnColor] = useState(true);
+  const [category, setCategory] = useState({});
   const navigate = useNavigate();
   const inputRef = useRef(null);
   const viewRef = useRef(null);
 
-  const list =
-    props.questions !== null && props.questions.map((question) => question);
+  // useEffect(() => {
+  //   let listA = {};
+  //   for (let question in props.questions) {
+  //     listA = props.questions[question];
+  //     setCategory(listA);
+  //   }
+  // });
+
+  // console.log(category);
+
+  // const list = props.questions.map((question) => question);
   let data = 0;
   let countPer = 0;
   const [progress, setProgress] = useState(0);
 
-  const arr1 = list.slice(0, 5);
-  const arr2 = list.slice(5, 10);
-  const arr3 = list.slice(10, 15);
-  const arr4 = list.slice(15, 20);
-  const arr5 = list.slice(20, 25);
-  const arr6 = list.slice(25, 30);
-  const arr7 = list.slice(30, 35);
-  const arr8 = list.slice(35, 40);
-  const arr9 = list.slice(40, 45);
-  const arr10 = list.slice(45);
+  const arr1 = props.questions.slice(0, 5);
+  const arr2 = props.questions.slice(5, 10);
+  const arr3 = props.questions.slice(10, 15);
+  const arr4 = props.questions.slice(15, 20);
+  const arr5 = props.questions.slice(20, 25);
+  const arr6 = props.questions.slice(25, 30);
+  const arr7 = props.questions.slice(30, 35);
+  const arr8 = props.questions.slice(35, 40);
+  const arr9 = props.questions.slice(40, 45);
+  const arr10 = props.questions.slice(45);
 
-  const [test, setTest] = useState(list.slice(0, 5));
+  const [test, setTest] = useState(props.questions.slice(0, 5));
   const [check, setCheck] = useState(0);
 
   const onClick = () => {
