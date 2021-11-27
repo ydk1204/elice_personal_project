@@ -93,6 +93,8 @@ const TestPage = (props) => {
     }
   });
 
+  // console.log("배포 안댐");
+
   const progressPer = () => {
     countPer = props.pp.filter((value) => value !== null);
     let count = countPer.length;
