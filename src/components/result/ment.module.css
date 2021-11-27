@@ -1,0 +1,50 @@
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+  /* color: #ff5722; */
+}
+
+.Answer {
+  position: relative;
+  background-color: white;
+  z-index: 1;
+}
+
+.line {
+  width: 750px;
+  height: 10px;
+  position: absolute;
+  border-bottom: 1px solid black;
+}
+
+.mentContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.typeName {
+  position: fixed;
+  width: 200px;
+  background-color: white;
+  font-size: 24px;
+  text-align: center;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.ment {
+  margin-top: 20px;
+  text-align: center;
+  padding: 50px 0;
+  width: 750px;
+  border: 1.5px solid #dd2c00;
+}

@@ -1,0 +1,74 @@
+body {
+  margin: 5%;
+}
+
+h1 {
+  margin-bottom: 7%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+}
+
+.loginTitle {
+  border-bottom: 2px solid black;
+}
+
+.inputContainer {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.nameMessage {
+  color: red;
+}
+
+.namePass {
+  visibility: hidden;
+}
+
+.genderMessage {
+  color: red;
+}
+
+.genderPass {
+  visibility: hidden;
+}
+
+.nextBtn {
+  width: 120px;
+  height: 40px;
+  opacity: 50%;
+  pointer-events: none;
+  color: #ff6d00;
+  border: 1px solid #ff6d00;
+}
+
+.normalBtn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  color: black;
+  border: 1px solid #ff6d00;
+  background-color: #fff3e0;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.normalBtn:hover {
+  background-color: #ff6d00;
+  cursor: pointer;
+  color: white;
+  border-radius: 30px;
+}
+
+.genderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

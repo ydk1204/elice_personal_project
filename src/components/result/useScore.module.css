@@ -1,0 +1,120 @@
+table {
+  width: 750px;
+  border: 2px solid #444444;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+th,
+td {
+  border: 1px solid #444444;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: gainsboro;
+}
+
+a {
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+span {
+  cursor: pointer;
+}
+
+.mTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  width: 740px;
+  font-size: 24px;
+  font-weight: bold;
+  border-left: 2px solid green;
+  margin-bottom: 10px;
+}
+
+.tbContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chartBox {
+  display: flex;
+  justify-content: center;
+}
+
+.chart {
+  height: 400px;
+  width: 747px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+  background-color: bisque;
+  padding: 0;
+  border: 2px solid #444444;
+}
+
+.graph {
+  bottom: 0;
+  width: 740px;
+  margin: 0 17px;
+  background-color: #ff8f00;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: 1s ease;
+  transition-delay: 0.1s;
+  text-align: center;
+}
+
+.recomBox {
+  width: 740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #444444;
+  margin-bottom: 4%;
+  /* width: 81.5%; */
+}
+
+.jobClass {
+  width: 740px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+.jobTitle {
+  width: 690px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #d1d1d1;
+}
+
+.job {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+  /* margin: 10px; */
+}
+
+.jobs {
+  margin: 4px;
+  padding: 0px;
+}
+
+.jobs:hover {
+  color: coral;
+}

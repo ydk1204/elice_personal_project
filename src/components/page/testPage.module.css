@@ -1,0 +1,60 @@
+* {
+  padding: 5px;
+}
+
+.testTitle {
+  position: fixed;
+  width: 750px;
+  border-bottom: 2px solid black;
+  background-color: white;
+  z-index: 1;
+  top: 0;
+}
+
+.nextBtn {
+  width: 120px;
+  height: 40px;
+  opacity: 50%;
+  pointer-events: none;
+  color: #ff6d00;
+  border: 1px solid #ff6d00;
+}
+
+.normalBtn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  color: #ff6d00;
+  border: 1px solid #ff6d00;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.normalBtn:hover {
+  background-color: #ff6d00;
+  cursor: pointer;
+  color: white;
+  border-radius: 30px;
+}
+
+.backBtn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  color: #ff3d00;
+  border: 1px solid #ff3d00;
+  transition: all 0.2s ease-in-out;
+}
+
+.backBtn:hover {
+  cursor: pointer;
+  background-color: #ff3d00;
+  color: white;
+  border-radius: 30px;
+}
+
+.footerBox {
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
+}

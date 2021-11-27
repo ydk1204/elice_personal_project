@@ -1,0 +1,30 @@
+.resultTitle {
+  border-bottom: 1px solid black;
+}
+
+.resultHeader {
+  margin: 0;
+}
+
+.normalBtn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  color: #ff6d00;
+  border: 1px solid #ff6d00;
+  transition: all 0.2s ease-in-out;
+}
+
+.normalBtn:hover {
+  background-color: #ff6d00;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.footerBox {
+  width: 750px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}

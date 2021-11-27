@@ -1,0 +1,62 @@
+body {
+  margin: 5%;
+}
+
+.nextBtn {
+  width: 120px;
+  height: 40px;
+  opacity: 50%;
+  pointer-events: none;
+  color: #ff6d00;
+  border: 1px solid #ff6d00;
+}
+
+.normalBtn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  color: black;
+  border: 1px solid #ff6d00;
+  background-color: #fff3e0;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.normalBtn:hover {
+  background-color: #ff6d00;
+  cursor: pointer;
+  color: white;
+  border-radius: 30px;
+}
+
+.exampleTitle {
+  position: fixed;
+  top: 0;
+  width: 750px;
+  border-bottom: 2px solid black;
+  background-color: white;
+  z-index: 1;
+}
+
+.subTitle {
+  margin-bottom: 5%;
+  width: 750px;
+}
+
+.selectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bf360c;
+  background-color: #ffccbc;
+  width: 750px;
+  height: 130px;
+  margin-bottom: 40px;
+}
+
+.radios {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
