@@ -12,16 +12,18 @@ const Example = (props) => {
   const [selected, setSelected] = useState("");
 
   useEffect(() => {
-    if (props.exam === "2") {
-      setSelected(true);
-    } else if (props.exam === "1") {
-      setSelected(false);
-    }
+    if (props.exam !== null) {
+      if (props.exam === "2") {
+        setSelected(true);
+      } else if (props.exam === "1") {
+        setSelected(false);
+      }
 
-    if (props.exdata === 1) {
-      setBtnPass(false);
-    } else {
-      setBtnPass(true);
+      if (props.exdata === 1) {
+        setBtnPass(false);
+      } else {
+        setBtnPass(true);
+      }
     }
   });
 
@@ -66,7 +68,7 @@ const Example = (props) => {
         </div>
       </ul>
       <button
-        className={btnPass ? styles.nextBtn : styles.normalBtn}
+        className={styles.normalBtn}
         onClick={() => {
           navigate("/test");
         }}

@@ -106,10 +106,7 @@ const Login = (props) => {
           성별을 선택해주세요.
         </p>
       </div>
-      <button
-        className={btnPass ? styles.nextBtn : styles.normalBtn}
-        onClick={onClick}
-      >
+      <button className={styles.normalBtn} onClick={onClick}>
         검사시작
       </button>
     </>

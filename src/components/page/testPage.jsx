@@ -122,11 +122,7 @@ const TestPage = (props) => {
         <button className={styles.backBtn} onClick={onBack}>
           이전
         </button>
-        <button
-          className={btnColor ? styles.nextBtn : styles.normalBtn}
-          onClick={onClick}
-          ref={inputRef}
-        >
+        <button className={styles.normalBtn} onClick={onClick} ref={inputRef}>
           다음
         </button>
       </div>
