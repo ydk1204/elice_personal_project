@@ -106,17 +106,18 @@ const TestPage = (props) => {
       </h1>
       <ProgressBar progress={progress} />
       <>
-        {test.map((question) => (
-          <Question
-            key={question.qitemNo}
-            question={question}
-            result={props.result}
-            pp={props.pp}
-            settingKey={question.qitemNo}
-            progressPer={progressPer}
-            confirm={confirm}
-          />
-        ))}
+        {test &&
+          test.map((question) => (
+            <Question
+              key={question.qitemNo}
+              question={question}
+              result={props.result}
+              pp={props.pp}
+              settingKey={question.qitemNo}
+              progressPer={progressPer}
+              confirm={confirm}
+            />
+          ))}
       </>
       <div className={styles.footerBox}>
         <button className={styles.backBtn} onClick={onBack}>
